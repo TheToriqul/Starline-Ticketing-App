@@ -3,10 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Star-Line Ticketing App</title>
-    <link rel="stylesheet" href="./public/output.css" />
+    <title>Star-Line Paribahan Ticketing App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/public/output.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1 class="text-2xl font-bold">Hello World</h1>
+  <body class="bg-gray-100 font-inter">
+    <header class="bg-white py-4">
+        <nav class="bg-white shadow-md">
+            <div class="container mx-auto px-4">
+              <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-gray-800 font-raleway">
+                  P-Ticket
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-green-400 transition duration-300">
+                  <i class="fas fa-bars text-2xl"></i>
+                </button>
+                
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-6 items-center">
+                  <a href="#" class="text-gray-600 hover:text-green-400 transition duration-300">Home</a>
+                  <a href="#" class="text-gray-600 hover:text-green-400 transition duration-300">About</a>
+                  <a href="#" class="text-gray-600 hover:text-green-400 transition duration-300">Destination</a>
+                  <a href="#" class="text-gray-600 hover:text-green-400 transition duration-300">Search</a>
+                </div>
+                
+                <button class="hidden md:flex bg-green-100 text-green-600 px-12 py-4 rounded-xl hover:bg-green-200 transition duration-300 items-center">
+                  <span class="mr-2">Bus</span>
+                  <img src="images/bus-icon.png" alt="Bus icon" class="w-5 h-5" />
+                </button>
+              </div>
+              
+              <!-- Mobile menu (hidden by default) -->
+              <div id="mobile-menu" class="hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                  <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-400 hover:bg-gray-50 transition duration-300">Home</a>
+                  <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-400 hover:bg-gray-50 transition duration-300">About</a>
+                  <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-400 hover:bg-gray-50 transition duration-300">Destination</a>
+                  <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-400 hover:bg-gray-50 transition duration-300">Search</a>
+                </div>
+                <div class="pt-4 pb-3 border-t border-gray-200">
+                  <button class="flex items-center px-3 py-2 rounded-md text-base font-medium text-green-600 bg-green-100 hover:bg-green-200 transition duration-300 w-full">
+                    <span class="mr-2">Bus</span>
+                    <img src="images/bus-icon.png" alt="Bus icon" class="w-5 h-5" />
+                  </button>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 mt-4">
+      <section class="relative text-white rounded-3xl overflow-hidden">
+        <img
+          src="images/banner.png"
+          alt="Bus in desert"
+          class="w-full h-full object-cover absolute inset-0"
+        />
+        <div class="relative z-10 p-8 md:p-16 text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4 font-raleway">
+            End-to-End Travel with<br />
+            <span class="text-green-400">P Paribahan</span>
+          </h1>
+          <p class="mb-8 max-w-xl text-sm md:text-base mx-auto">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+          <button
+            class="bg-green-500 text-white px-8 py-3 rounded-full hover:bg-green-600 transition duration-300 font-semibold"
+          >
+            Buy Tickets
+          </button>
+
+          <div
+            class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-16"
+          >
+            <div
+              class="bg-white text-gray-800 rounded-2xl p-4 flex items-center space-x-4 flex-1"
+            >
+              <img src="images/people.png" alt="Users icon" class="w-10 h-10" />
+              <div>
+                <div class="text-2xl font-bold font-raleway">500K+</div>
+                <div class="text-gray-600 text-sm">Registered users</div>
+              </div>
+            </div>
+            <div
+              class="bg-white text-gray-800 rounded-2xl p-4 flex items-center space-x-4 flex-1"
+            >
+              <img
+                src="images/ticket-cupon.png"
+                alt="Ticket icon"
+                class="w-10 h-10"
+              />
+              <div>
+                <div class="text-2xl font-bold font-raleway">1.7 lacks</div>
+                <div class="text-gray-600 text-sm">Tickets sold</div>
+              </div>
+            </div>
+            <div
+              class="bg-white text-gray-800 rounded-2xl p-4 flex items-center space-x-4 flex-1"
+            >
+              <img src="images/bus-icon.png" alt="Bus icon" class="w-10 h-10" />
+              <div>
+                <div class="text-2xl font-bold font-raleway">80K+</div>
+                <div class="text-gray-600 text-sm">Rental partners</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./JavaScript/app.js"></script>
   </body>
 </html>

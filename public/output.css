@@ -1917,8 +1917,25 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-green-300 {
+  --tw-text-opacity: 1;
+  color: rgb(134 239 172 / var(--tw-text-opacity));
+}
+
 .opacity-60 {
   opacity: 0.6;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-5 {
+  opacity: 0.05;
+}
+
+.opacity-80 {
+  opacity: 0.8;
 }
 
 .shadow-sm {
@@ -2025,6 +2042,10 @@ html {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:flex-row {

@@ -14,51 +14,91 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-100 font-inter">
+  <body>
     <header class="bg-white py-4">
-        <nav class="bg-white shadow-md">
-            <div class="container mx-auto px-4">
-              <div class="flex justify-between items-center py-4">
-                <div class="text-2xl font-bold text-gray-800 font-raleway">
-                  P-Ticket
-                </div>
-                
-                <!-- Mobile menu button -->
-                <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-green-400 transition duration-300">
-                  <i class="fas fa-bars text-2xl"></i>
-                </button>
-                
-                <!-- Desktop menu -->
-                <div class="hidden md:flex space-x-6 items-center">
-                  <a href="#" class="text-gray-600 hover:text-green-400 transition duration-300">Home</a>
-                  <a href="#" class="text-gray-600 hover:text-green-400 transition duration-300">About</a>
-                  <a href="#" class="text-gray-600 hover:text-green-400 transition duration-300">Destination</a>
-                  <a href="#" class="text-gray-600 hover:text-green-400 transition duration-300">Search</a>
-                </div>
-                
-                <button class="hidden md:flex bg-green-100 text-green-600 px-12 py-4 rounded-xl hover:bg-green-200 transition duration-300 items-center">
-                  <span class="mr-2">Bus</span>
-                  <img src="images/bus-icon.png" alt="Bus icon" class="w-5 h-5" />
-                </button>
-              </div>
-              
-              <!-- Mobile menu (hidden by default) -->
-              <div id="mobile-menu" class="hidden md:hidden">
-                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                  <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-400 hover:bg-gray-50 transition duration-300">Home</a>
-                  <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-400 hover:bg-gray-50 transition duration-300">About</a>
-                  <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-400 hover:bg-gray-50 transition duration-300">Destination</a>
-                  <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-400 hover:bg-gray-50 transition duration-300">Search</a>
-                </div>
-                <div class="pt-4 pb-3 border-t border-gray-200">
-                  <button class="flex items-center px-3 py-2 rounded-md text-base font-medium text-green-600 bg-green-100 hover:bg-green-200 transition duration-300 w-full">
-                    <span class="mr-2">Bus</span>
-                    <img src="images/bus-icon.png" alt="Bus icon" class="w-5 h-5" />
-                  </button>
-                </div>
-              </div>
+      <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center py-4">
+            <div class="text-2xl font-bold text-gray-800 font-raleway">
+              <i class="fa-solid fa-star-of-david mr-2 text-green-500"></i>
+              Star-Ticket
             </div>
-        </nav>
+
+            <!-- Mobile menu button -->
+            <button
+              id="mobile-menu-button"
+              class="md:hidden text-gray-600 hover:text-green-400 transition duration-300"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Desktop menu -->
+            <div class="hidden md:flex space-x-6 items-center">
+              <a
+                href="#"
+                class="text-gray-600 hover:text-green-400 transition duration-300"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 hover:text-green-400 transition duration-300"
+                >About</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 hover:text-green-400 transition duration-300"
+                >Destination</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 hover:text-green-400 transition duration-300"
+                >Search</a
+              >
+            </div>
+
+            <button
+              class="hidden md:flex bg-green-100 text-green-600 px-12 py-4 rounded-xl hover:bg-green-200 transition duration-300 items-center"
+            >
+              <span class="mr-2">Bus</span>
+              <img src="images/bus-icon.png" alt="Bus icon" class="w-5 h-5" />
+            </button>
+          </div>
+
+          <!-- Mobile menu (hidden by default) -->
+          <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <a
+                href="#"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-400 hover:bg-gray-50 transition duration-300"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-400 hover:bg-gray-50 transition duration-300"
+                >About</a
+              >
+              <a
+                href="#"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-400 hover:bg-gray-50 transition duration-300"
+                >Destination</a
+              >
+              <a
+                href="#"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-400 hover:bg-gray-50 transition duration-300"
+                >Search</a
+              >
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+              <button
+                class="flex items-center px-3 py-2 rounded-md text-base font-medium text-green-600 bg-green-100 hover:bg-green-200 transition duration-300 w-full"
+              >
+                <span class="mr-2">Bus</span>
+                <img src="images/bus-icon.png" alt="Bus icon" class="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="container mx-auto px-4 mt-4">
@@ -66,12 +106,12 @@
         <img
           src="images/banner.png"
           alt="Bus in desert"
-          class="w-full h-full object-cover absolute inset-0"
+          class="w-full h-full object-cover absolute inset-0 opacity-80"
         />
         <div class="relative z-10 p-8 md:p-16 text-center">
-          <h1 class="text-4xl md:text-6xl font-bold mb-4 font-raleway">
-            End-to-End Travel with<br />
-            <span class="text-green-400">P Paribahan</span>
+          <h1 class="text-4xl md:text-6xl md:w-1/2 mx-auto font-bold mb-4 font-raleway">
+            End-to-End Travel with
+            <span class="text-green-500">Star-Line Paribahan</span>
           </h1>
           <p class="mb-8 max-w-xl text-sm md:text-base mx-auto">
             Yes, you can run unit tests and view the results directly within the

@@ -2033,6 +2033,11 @@ html {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2066,6 +2071,11 @@ html {
 
   .md\:p-16 {
     padding: 4rem;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:text-center {
